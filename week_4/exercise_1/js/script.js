@@ -1,26 +1,26 @@
-/*console.log('Hello world!');
+/*
+const greeting = "Hello there people";
+const lengthOfGreeting = greeting.length;
+console.log("string chars:", lengthOfGreeting);
 
-const greeting = 'Hello there people';
-const lengtjOfGreeting = greeting.length;
-console.log('string chars:', lengtjOfGreeting);
+const spaceTest = "ab";
+console.log("spaceTest:", spaceTest.length);
+*/
 
-const emptyString = '';
-console.log('empty string:', emptyString.length);
-
-const spaceTest = 'a b';
-console.log('space: test', spaceTest.length);*/
-
-/*const firstName = 'Farida ';
-console.log('how many character:', firstName.length);
+/*
+const firstName = " Manny ";
+console.log("how many chars?", firstName.length);
 
 const trimmedName = firstName.trim();
-console.log('remove spaces:', trimmedName.length);
+console.log("remove spaces:", trimmedName.length);
 
-space = ' ';
-console.log('how many spaces:', space.length);
-console.log('remove space ang get length:', space.trim().length)*/
+const space = " ";
+console.log("how many spaces:", space.length);
+console.log("remove space and get length", space.trim().length);
+*/
 
 const firstName = document.querySelector("#firstName");
+
 firstName.addEventListener("keyup", logLength);
 
 function logLength(event) {
@@ -31,8 +31,6 @@ function logLength(event) {
   if (valueLength > 0) {
     console.log("The input has a value");
   } else {
-    console.log("The input has NOT a value");
+    console.log("The input does not have a value");
   }
 }
-
-
